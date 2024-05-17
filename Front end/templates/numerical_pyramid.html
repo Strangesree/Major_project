@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Center</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style2.css')}}">
+    <style>
+        body {
+            margin: 9px 20px 0px 50px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Numerical Pyramid (Math Problem Solving)</h1>
+    <div id="timer">00:00</div>
+    <button id="startBtn" class="btn">Start</button>
+    <button id="stopBtn" class="btn">Stop</button>
+    <main class="image-container">
+        <img src="{{ url_for('static', filename='images/numerical/1.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/2.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/3.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/4.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/5.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/6.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/7.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/8.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/9.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/10.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/11.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/12.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/13.jpg') }}" class="slide">
+        <img src="{{ url_for('static', filename='images/numerical/14.jpg') }}" class="slide">
+    </main>
+    <div class="nav">
+        <button class="circle-btn" onclick="goprev()">Prev</button>
+        <button class="circle-btn" onclick="gonext()">Next</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbeef7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #191c19; /* Green color */
+    font-size: 30px; /* Increased font size */
+}
+
+form {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4caf50; /* Green color */
+    font-size: 16px; /* Increased font size */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px; /* Decreased font size */
+}
+
+button[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+}
+
+#predict-btn {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 3%;
+}
+
+#predict-btn:hover {
+    background-color: #45a049;
+    /* Change the background color on hover */
+}
+
+img {
+    margin-top: 3%;
+    width: 30%;
+    height: 30%;
+}
+
+/* Additional styles for elements with the same class */
+.form-group:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.form-group:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+.label-bold {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 18px; /* Increased font size */
+}

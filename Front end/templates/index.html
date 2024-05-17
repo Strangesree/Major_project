@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assessment Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style2.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Assessments</h1>
+        <p>Choose an assessment below to begin:</p>
+        <div class="assessment-grid">
+            <a href="{{ url_for('reverse_reading') }}" class="assessment-link">Reverse Reading Time Tracking</a>
+            <a href="{{ url_for('numerical_pyramid') }}" class="assessment-link">Numerical Pyramid (Math Problem
+                Solving)</a>
+            <a href="{{ url_for('spot_the_difference') }}" class="assessment-link">Spot the Difference</a>
+            <a href="{{ url_for('find_the_number') }}" class="assessment-link">Identification of Hidden Numbers</a>
+            <a href="{{ url_for('stroop_test') }}" class="assessment-link">Stroop Test</a>
+            <a href="{{ url_for('ml_analyse') }}" class="assessment-link">ML Analyse</a>
+            <!-- <a href="reverse_reading.html" class="assessment-link">Reverse Reading Time Tracking</a>
+            <a href="numerical_pyramid.html" class="assessment-link">Numerical Pyramid (Math Problem Solving)</a>
+            <a href="spot_the_difference.html" class="assessment-link">Spot the Difference</a>
+            <a href="find_the_number.html" class="assessment-link">Identification of Hidden Numbers</a>
+            <a href="stroop_test.html" class="assessment-link">Stroop Test</a>
+            <a href="stroop_test.html" class="assessment-link">ML Analyse</a> -->
+        </div>
+    </div>
+</body>
+
+</html>

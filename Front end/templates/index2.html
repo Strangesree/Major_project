@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask website</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column;">
+        <div>
+            <h1>Cognitive Load Classification with EEG</h1>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="easy_file">Upload EEG Data (.easy file)</label>
+                    <input type="file" id="easy_file" name="easy_file" accept=".easy" required>
+                </div>
+                <button id="start-button" type="submit">Analyse</button>
+
+                <!-- <h3>Cognitive Load: Underload (Confidence: 90%)</h3> -->
+            </form>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            {%if file_name %}
+            <img src="{{url_for('static', filename='uploads/' + file_name)}}" alt=""> {% endif %}
+            <br>
+        </div>
+        <div>
+            <h1>{{result}}</h1>
+        </div>
+</body>
+
+</html>
